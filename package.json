@@ -1,0 +1,10 @@
+{
+  "name": "patrol-servicos-contact-form",
+  "private": true,
+  "scripts": {
+    "test": "node --check api/contact.js"
+  },
+  "dependencies": {
+    "resend": "^4.5.0"
+  }
+}
