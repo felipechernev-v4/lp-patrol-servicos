@@ -49,10 +49,11 @@ module.exports = async function handler(req, res) {
       from: fromEmail,
       to: [toEmail],
       replyTo: email,
-      subject: `Solicitação de orçamento - ${name}`,
+      subject: `[LP SERVIÇOS] Solicitação de orçamento - ${name}`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.6;color:#111827;">
           <p><strong>Nova solicitação de orçamento</strong></p>
+          <p><strong>Origem:</strong> Landing page de Serviços</p>
           <p><strong>Nome:</strong> ${escapeHtml(name)}</p>
           <p><strong>E-mail:</strong> ${escapeHtml(email)}</p>
           <p><strong>WhatsApp:</strong> ${escapeHtml(whatsapp || 'Não informado')}</p>
